@@ -9,8 +9,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 		<!-- bootstrap & fontawesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+		{{ HTML::style('css/jquery-ui.custom.min.css'); }}
+		{{ HTML::style('css/chosen.min.css'); }}
+		{{ HTML::style('css/datepicker.min.css'); }}
+		{{ HTML::style('css/bootstrap-timepicker.min.css'); }}
+		{{ HTML::style('css/daterangepicker.min.css'); }}
+		{{ HTML::style('css/bootstrap-datetimepicker.min.css'); }}
+		{{ HTML::style('css/colorpicker.min.css'); }}
+		<!-- text fonts -->
+		{{ HTML::style('css/bootstrap.css'); }}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
 		<!-- page specific plugin styles -->
 
@@ -18,7 +26,7 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
 
 		<!-- ace styles -->
-		<link rel="stylesheet" href="dist/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+		{{ HTML::style('css/ace.min.css'); }}
 
 		<!--[if lte IE 9]>
 			<link rel="stylesheet" href="dist/css/ace-part2.min.css" class="ace-main-stylesheet" />
@@ -31,7 +39,8 @@
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
-		<script src="dist/js/ace-extra.min.js"></script>
+
+		{{ HTML::script('js/ace-extra.min.js'); }}
 
 		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
 
@@ -886,18 +895,16 @@
 		<!--[if lte IE 8]>
 		  <script src="dist/js/excanvas.min.js"></script>
 		<![endif]-->
-		<script src="dist/js/jquery-ui.custom.min.js"></script>
-		<script src="dist/js/jquery.ui.touch-punch.min.js"></script>
-		<script src="dist/js/jquery.easypiechart.min.js"></script>
-		<script src="dist/js/jquery.sparkline.min.js"></script>
-		<script src="dist/js/flot/jquery.flot.min.js"></script>
-		<script src="dist/js/flot/jquery.flot.pie.min.js"></script>
-		<script src="dist/js/flot/jquery.flot.resize.min.js"></script>
-
-		<!-- ace scripts -->
-		<script src="dist/js/ace-elements.min.js"></script>
-		<script src="dist/js/ace.min.js"></script>
-
+		{{ HTML::script('js/jquery-ui.custom.min.js'); }}
+		{{ HTML::script('js/jquery.ui.touch-punch.min.js'); }}
+		{{ HTML::script('js/jquery.easypiechart.min.js'); }}
+		{{ HTML::script('js/jquery.sparkline.min.js'); }}
+		{{ HTML::script('js/flot/jquery.flot.min.js'); }}
+		{{ HTML::script('js/flot/jquery.flot.pie.min.js'); }}
+		{{ HTML::script('js/flot/jquery.flot.resize.min.js'); }}
+		{{ HTML::script('js/ace-elements.min.js'); }}
+		{{ HTML::script('js/ace.min.js'); }}
+		
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
 			jQuery(function($) {
@@ -1511,5 +1518,9 @@
 			
 			});
 		</script>
+
+
+        <script src="https://code.jquery.com/jquery.js"></script>
+        {{ HTML::script('js/bootstrap.js'); }}
 	</body>
 </html>

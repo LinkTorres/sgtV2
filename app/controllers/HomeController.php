@@ -74,4 +74,23 @@ class HomeController extends BaseController {
 		return View::make('GestionarTT');
 	}
 
+	public function PostAltatt()
+	{
+		$numtt = e(Input::get('numerott')); 
+		$nombrett = e(Input::get('nombrett')); 
+		$pasante1 = e(Input::get('pasante1')); 
+		$pasante2 = e(Input::get('pasante2')); 
+		$pasante3 = e(Input::get('pasante3')); 
+		$pasante4 = e(Input::get('pasante4')); 
+		$pasante5 = e(Input::get('pasante5')); 
+		$director1 = e(Input::get('director1'));
+		$director2 = e(Input::get('director2')); 
+		$sinodal1 = e(Input::get('sinodal1')); 
+		$sinodal2 = e(Input::get('sinodal2')); 
+		$sinodal3 = e(Input::get('sinodal3')); 
+
+		
+
+	}
+
 }

@@ -17,6 +17,7 @@ Route::group(array('before' => 'auth'), function()
 	Route::post('gestionProfesores', 'HomeController@postaltaProfesores');
 
 	Route::get('gestionartt', 'HomeController@altatt');
+	Route::post('gestionartt', 'HomeController@postAltatt');
 
 
 	// Esta ruta nos servirá para cerrar sesión.
