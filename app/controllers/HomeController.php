@@ -89,8 +89,37 @@ class HomeController extends BaseController {
 		$sinodal2 = e(Input::get('sinodal2')); 
 		$sinodal3 = e(Input::get('sinodal3')); 
 
-		
+		//revisar que no haya pasante
 
+		if(strlen(pasante2))
+		{
+			if (strlen(pasante3)) 
+			{
+				if (strlen(pasante4)) 
+				{
+					if (strlen(pasante5)) 
+					{
+						
+					}
+					else
+					{
+
+					}
+				}
+				else
+				{
+
+				}
+			}
+			else
+			{
+
+			}
+		}
+		else
+		{
+
+		}
 	}
 
 }

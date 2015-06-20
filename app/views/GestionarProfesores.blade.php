@@ -755,11 +755,151 @@
 											</div>
 											<div class="widget-body">
 												
-												<div class="widget-main no-padding">
+												<div class="row">
+			    <!-- begin col-12 -->
+			    <div class="col-md-12">
+			        <!-- begin panel -->
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Selecciona un usuario</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table id="data-table" class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Apellidos</th>
+                                            <th>Correo</th>
+                                            <th>Puesto</th>
+                                             <th>Editar</th>
+                      
+                       						<th>Borrar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td>A234</td>
+                                            <td>Alberto</td>
+                                            <td>Robles Domínguez</td>
+                                            <td>robert@hotmail.com</td>
+                                            <td>Community Manager</td>
+                                              <td>
+                                              	<p data-placement="top" data-toggle="tooltip" title="Edit">
+                                              		<button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span>
+                                              		</button>
+                                              	</p>
+                                              </td>
+    										  <td>
+    										  	<p data-placement="top" data-toggle="tooltip" title="Delete">
+    										  		<button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" >
+    										  			<span class="glyphicon glyphicon-trash"></span>
+    										  		</button>
+    										  	</p>
+    										  </td>
+                                        </tr>
+                                        
+                                        <tr class="odd gradeX">
+                                            <td>A235</td>
+                                            <td>Gustavo</td>
+                                            <td>Pérez López</td>
+                                            <td>gustav@hotmail.com</td>
+                                            <td>Marketing</td>
+                                              <td>
+                                              	<p data-placement="top" data-toggle="tooltip" title="Edit">
+                                              		<button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span>
+                                              		</button>
+                                              	</p>
+                                              </td>
+    										  <td>
+    										  	<p data-placement="top" data-toggle="tooltip" title="Delete">
+    										  		<button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" >
+    										  			<span class="glyphicon glyphicon-trash"></span>
+    										  		</button>
+    										  	</p>
+    										  </td>
+                                        </tr>
 
-												Ejemplo 2 Tabla
+                                        <tr class="odd gradeX">
+                                            <td>A236</td>
+                                            <td>Ricardo</td>
+                                            <td>García García</td>
+                                            <td>riicar@hotmail.com</td>
+                                            <td>Gerente ventas</td>
+                                              <td>
+                                              	<p data-placement="top" data-toggle="tooltip" title="Edit">
+                                              		<button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span>
+                                              		</button>
+                                              	</p>
+                                              </td>
+    										  <td>
+    										  	<p data-placement="top" data-toggle="tooltip" title="Delete">
+    										  		<button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" >
+    										  			<span class="glyphicon glyphicon-trash"></span>
+    										  		</button>
+    										  	</p>
+    										  </td>
+                                        </tr>
 
-												</div><!--Cierre de widget-main no-padding-->
+                                        <tr class="odd gradeX">
+                                            <td>A237</td>
+                                            <td>Pépe</td>
+                                            <td>Tovar López</td>
+                                            <td>pp@hotmail.com</td>
+                                            <td>Analista</td>
+                                              <td>
+                                              	<p data-placement="top" data-toggle="tooltip" title="Edit">
+                                              		<button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span>
+                                              		</button>
+                                              	</p>
+                                              </td>
+    										  <td>
+    										  	<p data-placement="top" data-toggle="tooltip" title="Delete">
+    										  		<button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" >
+    										  			<span class="glyphicon glyphicon-trash"></span>
+    										  		</button>
+    										  	</p>
+    										  </td>
+                                        </tr>
+
+                                        <tr class="odd gradeX">
+                                            <td>A238</td>
+                                            <td>Miriam</td>
+                                            <td>Robledo García</td>
+                                            <td>mrobledo@hotmail.com</td>
+                                            <td>Gerente Marketing</td>
+                                              <td>
+                                              	<p data-placement="top" data-toggle="tooltip" title="Edit">
+                                              		<button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span>
+                                              		</button>
+                                              	</p>
+                                              </td>
+    										  <td>
+    										  	<p data-placement="top" data-toggle="tooltip" title="Delete">
+    										  		<button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" >
+    										  			<span class="glyphicon glyphicon-trash"></span>
+    										  		</button>
+    										  	</p>
+    										  </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end panel -->
+                </div>
+                <!-- end col-12 -->
+            </div>
 											</div><!--Cierre de widget-body-->
 									</div>
 
