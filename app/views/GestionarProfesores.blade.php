@@ -21,6 +21,7 @@
 		{{ HTML::style('css/colorpicker.min.css'); }}
 		<!-- text fonts -->
 		{{ HTML::style('css/bootstrap.css'); }}
+		{{ HTML::style(''); }}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
 		<!-- page specific plugin styles -->
