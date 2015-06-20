@@ -783,7 +783,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-										
+										{{ $Profes }}
                                         <tr class="odd gradeX">
                                             <td>A234</td>
                                             <td>Alberto</td>
