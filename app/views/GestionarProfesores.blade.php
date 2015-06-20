@@ -770,8 +770,6 @@
                             <h4 class="panel-title">Selecciona un usuario</h4>
                         </div>
                         <div class="panel-body">
-							
-
                             <div class="table-responsive">
                                 <table id="data-table" class="table table-striped table-bordered">
                                     <thead>
@@ -785,7 +783,10 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-										
+										 @foreach($Profes as $item)
+									         <li> {{ $item->Cedula }} - {{ $item->Nombre }} </li>
+									     @endforeach
+
                                         <tr class="odd gradeX">
                                             <td>A234</td>
                                             <td>Alberto</td>

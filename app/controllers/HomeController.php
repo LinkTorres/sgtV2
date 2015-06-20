@@ -32,7 +32,9 @@ class HomeController extends BaseController {
             ->where('Rol','Profesor')
             ->get();
         Log::info("Logging an array: " . print_r($Profes, true));
-		return View::make('GestionarProfesores',$Profes);
+
+		return View::make('GestionarProfesores',$Profes)
+		->with('Profes',$Profes);
 	}
 
 	public function postaltaProfesores()
