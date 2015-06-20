@@ -774,17 +774,19 @@
                                 <table id="data-table" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>ID</th>
+                                            <th>Cedula</th>
                                             <th>Nombre</th>
                                             <th>Apellidos</th>
+                                            <th>Cargo</th>
                                             <th>Correo</th>
-                                            <th>Puesto</th>
-                                             <th>Editar</th>
-                      
-                       						<th>Borrar</th>
+                                            <th>Género</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+										 @foreach($Profes as $item)
+									         <li> {{ $item->Cedula }} - {{ $item->Nombre }} </li>
+									     @endforeach
+
                                         <tr class="odd gradeX">
                                             <td>A234</td>
                                             <td>Alberto</td>

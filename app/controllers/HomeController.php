@@ -27,7 +27,11 @@ class HomeController extends BaseController {
 
 	public function altaProfesores()
 	{
-		return View::make('GestionarProfesores');
+		$Profes= DB::table('Usuario')
+            ->join('Profesor', 'Usuario.id_Usuario', '=', 'Profesor.Usuario_id_Usuario')
+            ->where('Rol','Profesor')
+            ->get();
+		return View::make('GestionarProfesores',$Profes);
 	}
 
 	public function postaltaProfesores()
