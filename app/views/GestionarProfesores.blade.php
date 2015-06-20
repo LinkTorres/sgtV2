@@ -784,7 +784,15 @@
                                     </thead>
                                     <tbody>
 										 @foreach($Profes as $item)
-									         <li> {{ $item->Cedula }} - {{ $item->Nombre }} </li>
+									        <tr class="odd gradeX">
+                                            <td>{{ $item->Cedula }}</td>
+                                            <td>{{ $item->Nombre }}</td>
+                                            <td>{{ $item->ApellidoP }} {{ $item->ApellidoM }}</td>
+                                            <td>{{ $item->Cargo }}</td>
+                                            <td>{{ $item->Correo }}</td>
+                                            <td>{{ $item->Genero }}</td>
+                                        </tr> 
+									         
 									     @endforeach
 
                                         <tr class="odd gradeX">
