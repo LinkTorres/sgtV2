@@ -31,6 +31,7 @@ class HomeController extends BaseController {
             ->join('Profesor', 'Usuario.id_Usuario', '=', 'Profesor.Usuario_id_Usuario')
             ->where('Rol','Profesor')
             ->get();
+        Log::info("Logging an array: " . print_r($Profes, true));
 		return View::make('GestionarProfesores',$Profes);
 	}
 
