@@ -783,10 +783,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-										 @foreach($Profes as $item)
-									         <li> {{ $item->Cedula }} - {{ $item->Nombre }} </li>
-									     @endforeach
-
+										
                                         <tr class="odd gradeX">
                                             <td>A234</td>
                                             <td>Alberto</td>
